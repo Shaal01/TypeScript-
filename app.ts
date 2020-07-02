@@ -1,1 +1,1 @@
-console.log("lokal ændring");
+console.log("var det en lokal ændring");
