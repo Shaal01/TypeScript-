@@ -1,22 +1,39 @@
-function add(n1: number, n2: number, showResult: boolean){ 
+// const person: {
+//   name: string;
+//   age: number;
+// } = {
 
-   if (showResult){
-       console.log(n1 + n2);
-   } else{
-       return n1 + n2;
+// const ADMIN = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
 
-   }
-
+enum Role {
+  ADMIN,
+  READ_ONLY,
+  AUTHOR,
 }
 
-const number1 = 5;
-const number2 = 2.8;
-const printResult = true;
+const person = {
+  name: "shazad",
+  age: 36,
+  hobbies: ["Sports", "Cooking"],
+  role: Role.ADMIN,
+};
 
+// person.role.push("admin");
+// person.role[1] = 10;
 
- const result = add(number1, number2, printResult);
- console.log(result);
+// person.role = [0, "admin", "user"];
 
- 
+let farvoriteActivities: string[];
+farvoriteActivities = ["Sports"];
 
+console.log(person.name);
 
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase());
+}
+
+if (person.role === Role.ADMIN) {
+  console.log("is admin");
+}
